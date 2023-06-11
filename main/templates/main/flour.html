@@ -1,0 +1,108 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+<div class="main-banner">
+    <div class="main-banner-wrapper">
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="header-flex">
+                    <div class="header-nav-left">
+                        <div class="header-nav-item">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="" class="header-link">Өнімдер</a>
+                            <div class="submenu">
+                                <a>Ұн</a>
+                                <a>Макарон</a>
+                                <a>Жармалар</a>
+                            </div>
+                        </div>
+                        <div class="header-nav-item">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="" class="header-link">Рецепттер</a>
+                        </div>
+                        <div class="header-nav-item">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="" class="header-link">Тағы</a>
+                        </div>
+                    </div>
+                   <a href="./index.html"><img class="header-logo"src="https://cesna.kz/site/images/logo-cesna.png"></img></a>
+                    <div class="header-nav-right">
+                        <!-- <i class="fa fa-language" aria-hidden="true"></i> -->
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <!-- <i class="fa fa-globe" aria-hidden="true"></i> -->
+                       <div class="nav-sing-in">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                            <a href="" class="header-link sign-in">Кіру</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="pop_up">
+            <div class="sing-in-wrapper">
+                <p class="sign-in-title">Жеке кабинет</p>
+                <form method="post">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Құпия сөз">
+                    <p class="forget_password">Құпия сөзді ұмыттыңыз ба?</p>
+                    <button type="submit" class="sign-in-btn">Кіру</button>
+                    <p class="no-account">Тіркелгі жоқ па?</p>
+                    <button class="registration-btn">Тіркеліңіз </button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close">&#10006</div>
+            </div>
+        </div>
+
+       <div class="flour-banner">
+        <div class="flour-banner-cover"></div>
+        <div class="flour-banner-text">
+            <h1>ЦЕСНА ® №1 ұн* Қазақстанда!</h1>
+            <span>Тек қазақстандық бидай</span>
+            <span>Тек 100% табиғи құрамы</span>
+        </div>
+    </div>
+    </div>
+</div>
+<main>
+    <div class="flour-wrapper">
+        <section id="flours">
+            <div class="flour">
+                <div class="flour-text">
+                    <h3>Ұн ЦЕСНА® жоғары сорт</h3>
+                    <p class="flour-descripiton">Анемия қаупін азайтатын минералды-витаминдік кешенмен фортификацияланған жоғары сортты ЦЕСНА ® ұны.</p>
+                    <p class="flour-descripiton">Жоғары сапалы әмбебап ұн пісірудің барлық саласында қолданылады: қамырдың барлық түрлерін (ашытқы, май, қабыршақ және т.б.) илеу кезінде, кондитерлік өнімдерді (торттар, торттар, печенье және орамдар) дайындау кезінде, тұздықтар мен нан пісірудің қосымша ингредиенті ретінде.</p>
+                    <p class="flour-price"><b>Көтерме бағасы</b>: <span>1550тг</span></p>
+                    <p class="flour-number"><b>Тауардың саны:</b> <span>400</span></p>
+                    <p class="flour-trade-price"><b>Бөлшек сауда бағасы:</b> <span>2500тг</span></p>
+                    <p class="flour-weight"><b>Салмағы:</b> <span>5кг</span></p>
+                </div>
+                <img src="https://cesna.kz/storage/pages/Group_7.jpg" alt="" class="flour-image">
+            </div>
+            <div class="flour reverse">
+                <div class="flour-text">
+                    <h3>ҰН ЦЕСНА® бірінші сорт</h3>
+                    <p class="flour-descripiton">Бірінші сортты ЦЕСНА ® ұнында ақуыздар, талшықтар, дәрумендер мен минералдар көп.</p>
+                    <p class="flour-descripiton">Бұл сортты ұнның құрамында глютен мөлшері жоғары, бұл одан қамырды серпімді етеді, ал дайын өнімдер жақсы пішінге, үлкен көлемге, жағымды дәм мен хош иіске ие. Бірінші сортты ұн ыңғайсыз пісіруге (тоқаштар, пирогтар, құймақ, құймақ, пассерация, ұлттық кеспе түрлері және т.б.) және әртүрлі нан өнімдерін пісіруге жақсы.</p>
+                    <p class="flour-price"><b>Көтерме бағасы</b>: <span>2500тг</span></p>
+                    <p class="flour-number"><b>Тауардың саны:</b> <span>350</span></p>
+                    <p class="flour-trade-price"><b>Бөлшек сауда бағасы:</b> <span>4050тг</span></p>
+                    <p class="flour-weight"><b>Салмағы:</b> <span>5кг</span></p>
+                </div>
+                <img src="https://cesna.kz/storage/pages/Group_7.png" alt="" class="flour-image">
+            </div>
+            <div class="flour">
+                <div class="flour-text">
+                    <h3>ҰН ЦЕСНА® екінші сорт</h3>
+                    <p class="flour-descripiton">Екінші сортты ұн адам ағзасын сауықтыру үшін қажет, өйткені құрамында В дәрумендерінің көп мөлшері, микроэлементтер - калий, магний, темір және фосфор сақталады. Бұл элементтер жүйке жүйесін сақтау, сүйектердің пайда болуы және тіндердің пайда болуы үшін қажет.</p>
+                    <p class="flour-descripiton">2-ші сұрыпты бидай ұнынан жасалған кондитерлік өнімдер хош иісті, кеуекті, бірақ жұмсақ емес. Ол құймақ, тұшпара, тұшпара, пряник және печенье үшін жарамды. Көбінесе оны қара бидай ұнымен араластырып, одан диеталық нан пісіреді.</p>
+                    <p class="flour-price"><b>Көтерме бағасы</b>: <span>4000тг</span></p>
+                    <p class="flour-number"><b>Тауардың саны:</b> <span>250</span></p>
+                    <p class="flour-trade-price"><b>Бөлшек сауда бағасы:</b> <span>6000тг</span></p>
+                    <p class="flour-weight"><b>Салмағы:</b> <span>10кг</span></p>
+                </div>
+                <img src="https://cesna.kz/storage/pages/Group_16.png" alt="" class="flour-image">
+            </div>
+        </section>
+    </div>
+</main>
+{% endblock %}

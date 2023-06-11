@@ -1,0 +1,255 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+<div class="main-banner">
+    <div class="main-banner-wrapper">
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="header-flex">
+                    <div class="header-nav-left">
+                        <div class="header-nav-item">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="" class="header-link">Өнімдер</a>
+                        </div>
+                        <div class="header-nav-item">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="" class="header-link">Рецепттер</a>
+                        </div>
+                        <div class="header-nav-item">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="" class="header-link">Тағы</a>
+                        </div>
+                    </div>
+                   <a href="./index.html"><img class="header-logo"src="https://cesna.kz/site/images/logo-cesna.png"></img></a>
+                    <div class="header-nav-right">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                       <div class="nav-sing-in">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                            <a href="" class="header-link sign-in">Кіру</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="pop_up">
+            <div class="sing-in-wrapper">
+                <p class="sign-in-title">Жеке кабинет</p>
+                <form method="post">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Құпия сөз">
+                    <p class="forget_password">Құпия сөзді ұмыттыңыз ба?</p>
+                    <button type="submit" class="sign-in-btn">Кіру</button>
+                    <p class="no-account">Тіркелгі жоқ па?</p>
+                    <button class="registration-btn">Тіркеліңіз </button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close">&#10006</div>
+            </div>
+        </div>
+        <img id="main-banner-img" src="https://cesna.kz/storage/pages/2021-11-05_15.48.35.jpg" alt="">
+    </div>
+</div>
+<main>
+    <div class="main-wrapper">
+        <section id="stata">
+            <div class="stata-flex">
+                <div class="stata-card">
+                    <div><img src="https://cesna.kz/site/images/icons/quality.png" alt=""></div>
+                    <p>Жоғары сапа көрсеткіштері</p>
+                </div>
+                <div class="stata-card">
+                    <div><img src="https://cesna.kz/site/images/icons/bag.png" alt=""></div>
+                    <p>Өнімдердің үлкен ассортименті</p>
+                </div>
+                <div class="stata-card">
+                    <div><img src="https://cesna.kz/site/images/icons/map.png" alt=""></div>
+                    <p>Бүкіл республика бойынша қолжетімділік</p>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Біздің өнімдер</h2>
+            <div class="products-flex">
+                <a class="products-item" href="{% url 'flour' %}">
+                    <img src="https://cesna.kz/site/images/flourbg.jpg" alt="">
+                    <div></div>
+                    <h3>Ұн</h3>
+                </a>
+                <a href="{% url 'pasta' %}" class="products-item">
+                    <img src="https://cesna.kz/site/images/pastabg.jpg" alt="">
+                    <div></div>
+                    <h3>Макарон</h3>
+                </a>
+                <a href="{% url 'croup' %}" class="products-item">
+                    <img src="https://cesna.kz/site/images/groatbg.jpg" alt="">
+                    <div></div>
+                    <h3>Жармалар</h3>
+                </a>
+            </div>
+        </section>
+        <section id="recpts">
+            <h2>Кызықты рецептер</h2>
+            <div class="recpts-flex">
+                <div class="recpts-item">
+                    <img src="https://cesna.kz/storage/customer_recipes/customer_7/7-3NsYs4Dl4Nk3Zd6.jpeg" alt="">
+                    <div class="recpts-data">
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/timer.png" alt="">
+                            </div>
+                            <p>60 мин.</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/heart.png" alt="">
+                            </div>
+                            <p>4</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/food-num.png" alt="">
+                            </div>
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <h4>Күзгі пирог</h4>
+                    <p class="recpts-author">Автор: <span class="recpts-cesna">ЦЕСНА®</span></p>
+                    <p class="recpts-continue">Рецпеты көру</p>
+                </div>
+                <div class="recpts-item">
+                    <img src="https://cesna.kz/storage/customer_recipes/customer_2/2-JOYgAfA3JGSW2A4.jpeg" alt="">
+                    <div class="recpts-data">
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/timer.png" alt="">
+                            </div>
+                            <p>25 мин.</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/heart.png" alt="">
+                            </div>
+                            <p>3</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/food-num.png" alt="">
+                            </div>
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <h4>Фузилли, моцарелла, қызанақ және насыбайгүл қосылған салат</h4>
+                    <p class="recpts-author">Автор: <span class="recpts-cesna">ЦЕСНА®</span></p>
+                    <p class="recpts-continue">Рецпеты көру</p>
+                </div>
+                <div class="recpts-item">
+                    <img src="https://cesna.kz/storage/recipes/A017_06260859_S024_copy.jpg" alt="">
+                    <div class="recpts-data">
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/timer.png" alt="">
+                            </div>
+                            <p>90 мин.</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/heart.png" alt="">
+                            </div>
+                            <p>4</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/food-num.png" alt="">
+                            </div>
+                            <p>3</p>
+                        </div>
+                    </div>
+                    <h4>Чешура</h4>
+                    <p class="recpts-author">Автор: <span class="recpts-cesna">ЦЕСНА®</span></p>
+                    <p class="recpts-continue">Рецпеты көру</p>
+                </div>
+            </div>
+            <div class="recpts-flex">
+                <div class="recpts-item">
+                    <img src="https://cesna.kz/storage/recipes/A015_06260215_S084_copy.jpg" alt="">
+                    <div class="recpts-data">
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/timer.png" alt="">
+                            </div>
+                            <p>60 мин.</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/heart.png" alt="">
+                            </div>
+                            <p>4</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/food-num.png" alt="">
+                            </div>
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <h4>Манпар</h4>
+                    <p class="recpts-author">Автор: <span class="recpts-cesna">ЦЕСНА®</span></p>
+                    <p class="recpts-continue">Рецпеты көру</p>
+                </div>
+                <div class="recpts-item">
+                    <img src="https://cesna.kz/storage/recipes/A015_06251235_S051_copy.jpg" alt="">
+                    <div class="recpts-data">
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/timer.png" alt="">
+                            </div>
+                            <p>80 мин.</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/heart.png" alt="">
+                            </div>
+                            <p>15</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/food-num.png" alt="">
+                            </div>
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <h4>Бәліштер</h4>
+                    <p class="recpts-author">Автор: <span class="recpts-cesna">ЦЕСНА®</span></p>
+                    <p class="recpts-continue">Рецпеты көру</p>
+                </div>
+                <div class="recpts-item">
+                    <img src="https://cesna.kz/storage/recipes/A015_06251313_S054_copy.jpg" alt="">
+                    <div class="recpts-data">
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/timer.png" alt="">
+                            </div>
+                            <p>120 мин.</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/heart.png" alt="">
+                            </div>
+                            <p>10</p>
+                        </div>
+                        <div class="recpts-data-item">
+                            <div class="recpts-circle">
+                                <img src="https://cesna.kz/site/images/icons/food-num.png" alt="">
+                            </div>
+                            <p>1</p>
+                        </div>
+                    </div>
+                    <h4>Круассан</h4>
+                    <p class="recpts-author">Автор: <span class="recpts-cesna">ЦЕСНА®</span></p>
+                    <p class="recpts-continue">Рецпеты көру</p>
+                </div>
+            </div>
+          <button class="all-recepts-btn">Барлық рецепттерді көру</button>
+       </section>
+    </div>
+</main>
+{% endblock %}

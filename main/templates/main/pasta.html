@@ -1,0 +1,102 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+<div class="main-banner">
+    <div class="main-banner-wrapper">
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="header-flex">
+                    <div class="header-nav-left">
+                        <div class="header-nav-item">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="" class="header-link">Өнімдер</a>
+                            <div class="submenu">
+                                <a>Ұн</a>
+                                <a>Макарон</a>
+                                <a>Жармалар</a>
+                            </div>
+                        </div>
+                        <div class="header-nav-item">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="" class="header-link">Рецепттер</a>
+                        </div>
+                        <div class="header-nav-item">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <a href="" class="header-link">Тағы</a>
+                        </div>
+                    </div>
+                   <a href="./index.html"><img class="header-logo"src="https://cesna.kz/site/images/logo-cesna.png"></img></a>
+                    <div class="header-nav-right">
+                        <!-- <i class="fa fa-language" aria-hidden="true"></i> -->
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <!-- <i class="fa fa-globe" aria-hidden="true"></i> -->
+                       <div class="nav-sing-in">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                            <a href="" class="header-link sign-in">Кіру</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="pop_up">
+            <div class="sing-in-wrapper">
+                <p class="sign-in-title">Жеке кабинет</p>
+                <form method="post">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Құпия сөз">
+                    <p class="forget_password">Құпия сөзді ұмыттыңыз ба?</p>
+                    <button type="submit" class="sign-in-btn">Кіру</button>
+                    <p class="no-account">Тіркелгі жоқ па?</p>
+                    <button class="registration-btn">Тіркеліңіз </button>
+                </form>
+                <div class="pop_up_close" id="pop_up_close">&#10006</div>
+            </div>
+        </div>
+
+       <div class="pasta-banner">
+        <div class="pasta-banner-cover"></div>
+        <div class="pasta-banner-text">
+            <h1>Макарон №1  Қазақстанда!</h1>
+            <span>ЦЕСНА макароны - классикалық итальяндық рецепт бойынша жасалған өнім!</span>
+        </div>
+    </div>
+    </div>
+</div>
+<main>
+    <div class="pasta-wrapper">
+        <section id="pasta">
+            <h2>ЦЕСНА ® Макароны тек "DURUM" сортындағы қазақстандық бидайдың қатты сорттарынан және таза судан жасалады.</h2>
+            <p class="pasta-main-description">Арнайы ұнтақтау қатты бидайдың барлық пайдалы заттары мен қасиеттерін сақтайтын дәнді дақылдарды алуға мүмкіндік береді. Осының арқасында Цесна ® макароны пісіру кезінде пішіні мен пайдалы қасиеттерін жақсы сақтайды.</p>
+            <div class="pasta reverse">
+                <div class="pasta-text">
+                    <h3>ЦЕСНА® макарондар</h3>
+                    <p class="pasta-descripiton">Цесна макароны қазақстандық бидайдың қатты сорттарынан дайындалады.</p>
+                    <p class="pasta-descripiton">Қатты бидайдан жасалған макарон-бұл пайдалы және қоректік тағам, оны пайдалы диетаға қосуға болады. Олар денені энергиямен қамтамасыз етеді, ас қорыту жүйесінің қалыпты жұмысын сақтауға көмектеседі және әртүрлі аспаздық рецепттерде қолдануға болады.</p>
+                    <p class="pasta-weight"><b>Салмағы:</b> <span>400 грамм, 900 грамм, 1800 грамм, 4500 грамм (полипропилен қаптамасы)</span></p>
+                    <p class="past-shelf"><b>Сақтау мерзімі:</b> <span>24 ай</span></p>
+                </div>
+                <img src="https://cesna.kz/storage/pages/pasta2.jpg" alt="">
+            </div>
+            <div class="pasta zhaima">
+                <div class="pasta-text">
+                    <h3>Жайма ЦЕСНА®</h3>
+                    <p class="pasta-descripiton">Ең жақсы үй дәстүрлерінде жасалған , жіңішке илектелген классикалық рецепт бойынша - Цесна ® желісіндегі ең көп сұранысқа ие өнімдердің бірі.</p>
+                    <p class="pasta-weight"><b>Салмағы:</b> <span>300 грамм (картон қаптамасы)</span></p>
+                    <p class="past-shelf"><b>Сақтау мерзімі:</b> <span>24 ай</span></p>
+                </div>
+                <img src="https://cesna.kz/storage/pages/jayma.jpg" alt="" id="zhaima">
+            </div>
+            <div class="pasta reverse">
+                <div class="pasta-text uya">
+                    <h3>Ұялы кеспе ЦЕСНА® </h3>
+                    <p class="pasta-descripiton">Cпагетти немесе кеспе түріндегі макарон ұя түрінде бұралған.</p>
+                    <p class="pasta-descripiton">Гарнир немесе тәуелсіз тағам үшін негіз ретінде тамаша.</p>
+                    <p class="pasta-weight"><b>Салмағы:</b> <span>500 грамм (картон қаптамасы)</span></p>
+                    <p class="past-shelf"><b>Сақтау мерзімі:</b> <span>24 ай</span></p>
+                </div>
+                <img id="uya" src="https://cesna.kz/storage/pages/gnezdo-1.jpg">
+            </div>
+        </section>
+    </div>
+</main>
+{% endblock %}

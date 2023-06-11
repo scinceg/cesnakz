@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <title>Цесна | ЦЕСНА® мука №1* в Казахстане!</title>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <div class="footer-wrapper">
+           <div class="footer-box">
+              <div class="footer-flex">
+                    <div class="footer-nav">
+                        <a href="" class="footer-link">Наши контакты</a>
+                        <a href="" class="footer-link">Обратная связь</a>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="https://cesna.kz/site/images/logo-cesna.png">
+                        <p>"JFOOD KAZAKHSTAN" ЖШС тауар белгісінің иесі</p>
+                    </div>
+                    <div class="footer-networks">
+                       <a href="https://web.facebook.com/cesna.kz?_rdc=1&_rdr" class="footer-network"><img src="https://cesna.kz/site/images/icons/facebook.png" alt="" class="footer-inst"></a>
+                       <a href="https://www.instagram.com/cesna.kz/" class="footer-network"><img src="https://cesna.kz/site/images/icons/instagram.png" alt="" class="footer-facebook"></a>
+                    </div>
+              </div>
+           </div>
+           <p class="footer-rights">© 2021. Барлық құқықтар қорғалған</p>
+       </div>
+   
+    </footer>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
